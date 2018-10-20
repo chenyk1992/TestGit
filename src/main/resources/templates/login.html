@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+这是我的登录页!<br/>
+<p th:text="${myname}"></p>
+<th:block th:each="mylist,iterStat:${list}">
+    <span th:text="${mylist.getUserName()}"></span>
+    <span th:text="${mylist.password}"></span>
+    <span th:text="${mylist.phone}"></span>
+    <br/>
+</th:block>
+
+</body>
+</html>
