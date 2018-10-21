@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  **/
 @Configuration
 public class DBConfig {
-    @Bean
+    @Bean(name = "druidDataSource")
     public DruidDataSource  druidDataSource(){
         //druid数据源配置
         DruidDataSource dataSource = new DruidDataSource();
